@@ -23,7 +23,6 @@ class BrowserLanguageDetector implements Iterator
         if (isset($_SERVER["HTTP_ACCEPT_LANGUAGE"]))
         {
             $languages = strtolower($_SERVER["HTTP_ACCEPT_LANGUAGE"]);
-            $languages = $test;
             $languages = str_replace(' ', '', $languages);
             $languages = explode(",", $languages);
             foreach ($languages as $language)
